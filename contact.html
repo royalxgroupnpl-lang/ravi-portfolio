@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ravi Sharma</title>
+<meta name="description" content="Get in touch with Ravi Sharma to discuss your next design project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Ravi<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="primaryNav">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-header container">
+    <p class="eyebrow">Contact</p>
+    <h1>Let's start a conversation</h1>
+    <p class="lead">Have a project, a question, or just want to say hi? Fill out the form below or reach out directly.</p>
+  </section>
+
+  <section class="section container contact-grid">
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+        <span class="form-error" id="nameError" role="alert"></span>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+        <span class="form-error" id="emailError" role="alert"></span>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        <span class="form-error" id="messageError" role="alert"></span>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-success" id="formSuccess" role="status" hidden>Thanks! Your message has been noted — Ravi will get back to you soon.</p>
+    </form>
+
+    <aside class="contact-info">
+      <h2>Other ways to reach me</h2>
+      <dl>
+        <dt>Email</dt>
+        <dd><a href="mailto:hello@ravisharma.design">hello@ravisharma.design</a></dd>
+        <dt>Location</dt>
+        <dd>Bengaluru, India</dd>
+        <dt>Availability</dt>
+        <dd>Booking new projects from November 2026</dd>
+      </dl>
+      <div class="social-links">
+        <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Ravi Sharma. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

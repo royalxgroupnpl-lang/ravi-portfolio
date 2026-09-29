@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Ravi Sharma</title>
+<meta name="description" content="A selection of branding, web, and product design projects by Ravi Sharma.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Ravi<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="primaryNav">
+      <a href="index.html">Home</a>
+      <a href="work.html" class="active">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-header container">
+    <p class="eyebrow">Portfolio</p>
+    <h1>Selected Work</h1>
+    <p class="lead">A mix of brand identities, websites, and product design projects from the last few years.</p>
+  </section>
+
+  <section class="section container">
+    <div class="filter-bar" role="tablist" aria-label="Filter projects by category">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-btn" data-filter="branding" role="tab" aria-selected="false">Branding</button>
+      <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+      <button class="filter-btn" data-filter="product" role="tab" aria-selected="false">Product</button>
+    </div>
+
+    <div class="grid grid-3" id="projectGrid">
+      <article class="card" data-category="branding">
+        <div class="card-thumb thumb-1" role="img" aria-label="Orbit brand identity thumbnail"></div>
+        <h3>Orbit — Brand Identity</h3>
+        <p>Full visual identity system for a fintech startup, including logo, type, and color.</p>
+        <span class="tag">Branding</span>
+      </article>
+      <article class="card" data-category="product">
+        <div class="card-thumb thumb-2" role="img" aria-label="Lumen app thumbnail"></div>
+        <h3>Lumen — Mobile App</h3>
+        <p>End-to-end UX/UI design for a wellness app used by over 50,000 people.</p>
+        <span class="tag">Product</span>
+      </article>
+      <article class="card" data-category="web">
+        <div class="card-thumb thumb-3" role="img" aria-label="Verve website thumbnail"></div>
+        <h3>Verve — Website</h3>
+        <p>Bold marketing site and design system for a creative agency.</p>
+        <span class="tag">Web</span>
+      </article>
+      <article class="card" data-category="branding">
+        <div class="card-thumb thumb-4" role="img" aria-label="Northline brand identity thumbnail"></div>
+        <h3>Northline — Rebrand</h3>
+        <p>Modernized identity and packaging system for an outdoor apparel brand.</p>
+        <span class="tag">Branding</span>
+      </article>
+      <article class="card" data-category="web">
+        <div class="card-thumb thumb-5" role="img" aria-label="Fable website thumbnail"></div>
+        <h3>Fable — E-commerce Site</h3>
+        <p>Responsive storefront design with a focus on storytelling and conversion.</p>
+        <span class="tag">Web</span>
+      </article>
+      <article class="card" data-category="product">
+        <div class="card-thumb thumb-6" role="img" aria-label="Pulse dashboard thumbnail"></div>
+        <h3>Pulse — Analytics Dashboard</h3>
+        <p>A data-dense dashboard redesigned for clarity, speed, and delight.</p>
+        <span class="tag">Product</span>
+      </article>
+    </div>
+    <p class="empty-state" id="emptyState" hidden>No projects in this category yet.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Ravi Sharma. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
